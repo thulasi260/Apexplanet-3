@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Quiz & API</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Fun Quiz & Live Jokes</h1>
+
+  <div class="container" id="quiz-container">
+    <img id="quiz-image" src="" alt="" style="max-width: 100%; border-radius: 10px; margin-bottom: 15px; display: none;" />
+    <p id="question"></p>
+    <div id="options"></div>
+    <p id="quiz-result"></p>
+    <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next</button>
+    <p id="score-display">Score: 0</p>
+  </div>
+
+<div class="container" id="api-data">-
+  <button onclick="fetchJoke()">Tell Me a Joke 😄</button>
+  <p id="joke">Click the button to get a joke!</p>
+  <img id="joke-img" src="funny-vector.jpg" alt="Laughing" />
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
